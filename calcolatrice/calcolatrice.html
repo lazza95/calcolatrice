@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcolatrice</title>
+        <link rel="stylesheet" href="calcolatr1ce.css">
+    </head>
+    <h1 id="titolo"> LA MIA CALCOLATRICE IN JS</h1>
+    <div id="calcolatrice">
+        <form name="form">
+            <input id ="area" name="area"style="width:207px" placeholder="0">
+            <table id= "calcolo">
+                <tr>
+                    <td><input type="button" value="7" onclick="aggiungi('7')"></td>
+                    <td><input type="button" value="8" onclick="aggiungi('8')"></td>
+                    <td><input type="button" value="9" onclick="aggiungi('9')"></td> 
+                    <td><input type="button" value="/" onclick="aggiungi('/')"></td> 
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="aggiungi('4')"></td>
+                    <td><input type="button" value="5" onclick="aggiungi('5')"></td>
+                    <td><input type="button" value="6" onclick="aggiungi('6')"></td> 
+                    <td><input type="button" value="X" onclick="aggiungi('*')"></td> 
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="aggiungi('1')"></td>
+                    <td><input type="button" value="2" onclick="aggiungi('2')"></td>
+                    <td><input type="button" value="3" onclick="aggiungi('3')"></td> 
+                    <td><input type="button" value="-" onclick="aggiungi('-')"></td> 
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" onclick=" canc()"></td>
+                    <td><input type="button" value="0" onclick="aggiungi('0')"></td>
+                    <td><input type="button" value="." onclick="aggiungi('.')"></td> 
+                    <td><input type="button" value="+" onclick="aggiungi('+')"></td> 
+                </tr>   
+                <table id="uguale"> 
+                <tr>
+                    <td rowspan="1"><input style="width:207px;" type="button" value="=" onclick="uguale()"></td>
+                </tr>
+                </table>
+        </form>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
